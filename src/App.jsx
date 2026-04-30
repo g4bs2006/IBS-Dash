@@ -359,7 +359,7 @@ export default function App() {
             />
             <KpiCard
               label="Taxa de Comparecimento"
-              value={loading ? <Skeleton w={56} h={28} /> : fmtPct(compareceu, compareceu + (c.cFaltou ?? 0))}
+              value={loading ? <Skeleton w={56} h={28} /> : fmtPct(compareceu, totalPipeline)}
             />
             <KpiCard
               label="Taxa de Fechamento"
